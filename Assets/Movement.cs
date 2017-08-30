@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour {
     public float maxSpeed = 10f;
     public Transform player;
     public Rigidbody2D move;
+    public float rotationSpeed = 5f;
 
     // Use this for initialization
 
@@ -23,6 +24,7 @@ public class Movement : MonoBehaviour {
         
 float moveRightLeft = Input.GetAxis("Horizontal");
         move.velocity = new Vector2(moveRightLeft * maxSpeed, move.velocity.x);
+
         
-	}
+    }
 }
