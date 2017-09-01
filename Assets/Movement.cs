@@ -16,13 +16,13 @@ public class Movement : MonoBehaviour {
         GameObject go = GameObject.Find("player");
         move = GetComponent<Rigidbody2D>();
     }
-	
+	   
 	// Update is called once per frame
 	void FixedUpdate () {
     float moveUpDown = Input.GetAxis("Vertical");
-        move.velocity = new Vector2(moveUpDown * maxSpeed, move.velocity.x);
+        move.velocity = new Vector2(moveUpDown * maxSpeed, move.velocity.y);
         
-float moveRightLeft = Input.GetAxis("Horizontal");
+    float moveRightLeft = Input.GetAxis("Horizontal");
         move.velocity = new Vector2(moveRightLeft * maxSpeed, move.velocity.x);
 
         
