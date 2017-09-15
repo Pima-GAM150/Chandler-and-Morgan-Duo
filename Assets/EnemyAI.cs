@@ -17,12 +17,12 @@ public class EnemyAI : MonoBehaviour {
 	void Update () {
      //   Instantiate(enemy, new Vector3(Random.Range(-500, 500), Random.Range(-500, 500), 0), Quaternion.identity);
         {
-            transform.LookAt(Player);
+            transform.rotation = Quaternion.LookRotation(Vector3.forward, (Player.position - transform.position).normalized);
 
             if (Vector3.Distance(transform.position, Player.position) >= MinDist)
             {
 
-                transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+                transform.position += transform.up * MoveSpeed * Time.deltaTime;
 
 
 
