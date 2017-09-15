@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MouseRotation : MonoBehaviour {
+public class EnemyRotation : MonoBehaviour {
     public float rotateSpeed = 0f;
     public Transform player;
 	// Update is called once per frame

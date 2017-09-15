@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour {
-
+    public Transform enemy;
         public Transform Player;
         public float MoveSpeed = 4;
         public float  MaxDist = 10f;
@@ -15,8 +15,8 @@ public class EnemyAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
- {
+     //   Instantiate(enemy, new Vector3(Random.Range(-500, 500), Random.Range(-500, 500), 0), Quaternion.identity);
+        {
             transform.LookAt(Player);
 
             if (Vector3.Distance(transform.position, Player.position) >= MinDist)

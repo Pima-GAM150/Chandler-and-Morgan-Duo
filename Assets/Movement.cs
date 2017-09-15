@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-    public float maxSpeed = 10f;
+    public float maxSpeed = 0f;
     public Transform player;
     public Rigidbody2D move; 
-    public float rotationSpeed = 5f;
+    public float rotationSpeed = 0f;
 
     // Use this for initialization
 

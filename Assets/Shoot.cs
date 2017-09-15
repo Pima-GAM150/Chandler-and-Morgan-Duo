@@ -25,8 +25,6 @@ public class Shoot : MonoBehaviour {
         {
             GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             projectiles.Add(bullet);
-           
-           
             
         }
         for (int i = 0; i < projectiles.Count; i++)
@@ -35,9 +33,9 @@ public class Shoot : MonoBehaviour {
             if (shootBullet != null)
             {
                 Vector2 bulletScreenPos = (shootBullet.transform.position);
-               
+                
                 //deleting the prefab
-                if (bulletScreenPos.y >= Screen.height || bulletScreenPos.y <=0 )
+                if (bulletScreenPos.y >= Screen.width || bulletScreenPos.y <=0 )
                 {
                     DestroyObject(shootBullet);
                     projectiles.Remove(shootBullet);
