@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour
+{
     public Transform enemy;
-        public Transform Player;
-        public float MoveSpeed = 4;
-        public float  MaxDist = 10f;
-        public float MinDist = 5f;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-     //   Instantiate(enemy, new Vector3(Random.Range(-500, 500), Random.Range(-500, 500), 0), Quaternion.identity);
+    public Transform Player;
+    public float MoveSpeed = 4;
+    public float MaxDist = 10f;
+    public float MinDist = 5f;
+  
+    // Use this for initialization
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+  
+
+    void Update()
+    {
         {
             transform.rotation = Quaternion.LookRotation(Vector3.forward, (Player.position - transform.position).normalized);
 
@@ -31,7 +36,11 @@ public class EnemyAI : MonoBehaviour {
                     //Here Call any function U want Like Shoot at here or something
                 }
 
+               
+                
             }
         }
     }
 }
+        
+    
