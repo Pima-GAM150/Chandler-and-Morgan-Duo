@@ -12,6 +12,9 @@ public class Hit : MonoBehaviour
         {
             Destroy(col.gameObject);
 
+			GameObject deathsManagerObject = GameObject.FindGameObjectWithTag ("deaths");
+			Deaths deaths = deathsManagerObject.GetComponent<Deaths> ();
+
 			deaths.Increase(); 
         }
     }

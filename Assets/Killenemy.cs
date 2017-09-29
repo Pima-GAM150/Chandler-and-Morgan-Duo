@@ -7,7 +7,7 @@ public class Killenemy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "Enemy")
+		if (col.gameObject.name.Contains("Enemy"))
         {
             Destroy(col.gameObject);
 
