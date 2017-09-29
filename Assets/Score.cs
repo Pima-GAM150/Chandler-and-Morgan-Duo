@@ -8,7 +8,6 @@ public class Score : MonoBehaviour {
 	public int score = 0;
 	public Text text;
 
-
 	public void Increase () {
 
 		score += 1;
