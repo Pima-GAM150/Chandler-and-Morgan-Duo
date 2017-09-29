@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        enemy = transform.Find("Player");
     }
 
     // Update is called once per frame
