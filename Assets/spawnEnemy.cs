@@ -11,10 +11,10 @@ public class spawnEnemy : MonoBehaviour
 
     IEnumerator SpawnObject(int index, float seconds)
     {
-        Debug.Log("Waiting for " + seconds + " seconds");
+       // Debug.Log("Waiting for " + seconds + " seconds");
 
         yield return new WaitForSeconds(seconds);
-        Instantiate(enemy, new Vector2(Random.Range(1000, -100), Random.Range(1000, -100)), Quaternion.identity);
+        Instantiate(enemy, new Vector2(Random.Range(10, -10), Random.Range(10, -10)), Quaternion.identity);
 
         //We've spawned, so now we could start another spawn     
         isSpawning = false;

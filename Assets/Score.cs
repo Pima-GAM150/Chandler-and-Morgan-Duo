@@ -11,16 +11,21 @@ public class Score : MonoBehaviour {
 	public void Increase () {
 
 		score += 1;
+        PlayerPrefs.SetInt("kills", score);
 	}
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+       score = PlayerPrefs.GetInt("kills");
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 		text.text = "Score:" + (score);
+        
+
+        
 
 	}
 }

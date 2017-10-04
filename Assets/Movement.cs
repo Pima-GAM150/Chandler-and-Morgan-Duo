@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour {
 
 
     void Start () {
-        GameObject go = GameObject.Find("player");
+        //GameObject go = GameObject.Find("player");
         move = GetComponent<Rigidbody2D>();
     }
 	   
