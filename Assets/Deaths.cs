@@ -11,7 +11,7 @@ public class Deaths : MonoBehaviour {
 	public void Increase(){
 		deaths += 1;
         PlayerPrefs.SetInt("Deaths", deaths);
-        if (deaths >= 10)
+        if (deaths >= 64)
         {
             deaths = 0;
         }

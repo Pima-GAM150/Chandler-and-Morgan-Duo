@@ -22,21 +22,20 @@ public class spawnEnemy : MonoBehaviour
 
     void Update()
     {
-        enemy = GameObject.Find("Enemy");
-        player = GameObject.Find("Player");
+       enemy = GameObject.Find("Enemy");
+       player = GameObject.Find("Player");
         
         //We only want to spawn one at a time, so make sure we're not already making that call
         if (!isSpawning)
         {
-    
-      
-        //use pos as the location for instantiating the enemy
            isSpawning = true; //Yep, we're going to spawn
            int enemyIndex = Random.Range(0, enemies.Length);
-          StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime, maxTime)));
-                 
+            StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime, maxTime)));
+        
+               
         //We've spawned, so now we could start another spawn    
         }
+    
  
     }
 }
