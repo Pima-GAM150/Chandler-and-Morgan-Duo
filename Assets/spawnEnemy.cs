@@ -6,8 +6,8 @@ public class spawnEnemy : MonoBehaviour
     public GameObject player;
     public GameObject enemy;
     bool isSpawning = false;
-    public float minTime = 5.0f;
-    public float maxTime = 15.0f;
+    public float minTime;
+    public float maxTime;
     public GameObject[] enemies;  // Array of enemy prefabs.
 
     IEnumerator SpawnObject(int index, float seconds)

@@ -12,6 +12,10 @@ public class Score : MonoBehaviour {
 
 		score += 1;
         PlayerPrefs.SetInt("kills", score);
+        if (score >= 100)
+        {
+            score = 0;
+        }
 	}
 	// Use this for initialization
 	void Start () {

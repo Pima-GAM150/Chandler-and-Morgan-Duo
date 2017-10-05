@@ -11,10 +11,14 @@ public class Deaths : MonoBehaviour {
 	public void Increase(){
 		deaths += 1;
         PlayerPrefs.SetInt("Deaths", deaths);
+        if (deaths >= 10)
+        {
+            deaths = 0;
+        }
     }
 	// Use this for initialization
 	void Start () {
-        deaths = PlayerPrefs.GetInt("Deaths");
+       deaths = PlayerPrefs.GetInt("Deaths");
     }
 	// Update is called once per frame
 	void Update () {
