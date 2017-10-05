@@ -15,7 +15,7 @@ public class ShootRight : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        bullet.transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
+      bullet.transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
     }
 }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShootDown : MonoBehaviour {
 
     public GameObject bullet;
-    public float bulletSpeed;
+   public float bulletSpeed;
     // Use this for initialization
     void Start()
     {

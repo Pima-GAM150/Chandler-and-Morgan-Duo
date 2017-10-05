@@ -9,12 +9,15 @@ public class Deaths : MonoBehaviour {
 	public Text text;
 
 	public void Increase(){
-		deaths += 1;
-        PlayerPrefs.SetInt("Deaths", deaths);
-        if (deaths >= 64)
+		 
+        deaths += 1;
+      PlayerPrefs.SetInt("Deaths", deaths);
+       if (deaths >= 50)
         {
             deaths = 0;
         }
+
+      
     }
 	// Use this for initialization
 	void Start () {

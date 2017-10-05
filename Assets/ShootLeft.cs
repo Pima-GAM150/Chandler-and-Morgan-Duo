@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ShootLeft : MonoBehaviour {
 
-    public GameObject bullet;
-    public float bulletSpeed;
+   public GameObject bullet;
+   public float bulletSpeed;
     // Use this for initialization
     void Start()
     {
