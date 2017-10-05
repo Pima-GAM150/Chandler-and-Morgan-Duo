@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        enemy = transform.Find("Player");
+       
     }
 
     // Update is called once per frame
@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         {
+            
             transform.rotation = Quaternion.LookRotation(Vector3.forward, (Player.position - transform.position).normalized);
 
             if (Vector3.Distance(transform.position, Player.position) >= MinDist)

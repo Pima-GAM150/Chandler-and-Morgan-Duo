@@ -15,7 +15,7 @@ public class ShootDown : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        bullet.transform.Translate(Vector3.down * bulletSpeed * Time.deltaTime);
+        bullet.transform.Translate(Vector2.down * bulletSpeed * Time.deltaTime);
     }
 }
 

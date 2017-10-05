@@ -3,8 +3,13 @@
 public class EnemyRotation : MonoBehaviour {
     public float rotateSpeed = 0f;
     public Transform player;
-	// Update is called once per frame
-	private void Update ()
+    // Update is called once per frame
+
+        private void Start()
+    {
+
+    }
+    private void Update ()
     {
 
         Vector2 direction = player.position - transform.position;

@@ -15,7 +15,7 @@ public class ShootLeft : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        bullet.transform.Translate(Vector3.left * bulletSpeed * Time.deltaTime);
+        bullet.transform.Translate(Vector2.left * bulletSpeed * Time.deltaTime);
     }
 }
 
